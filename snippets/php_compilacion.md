@@ -3,16 +3,13 @@ PHP - Compilacion
 
 ## Dependencias en Ubuntu
 
+```
+sudo apt-get install libxml2-dev libssl-dev libcurl4-openssl-dev libcurl4-gnutls-dev libjpeg-turbo8-dev libpng-dev libfreetype6-dev libmcrypt-dev libreadline-dev libxslt1-dev
+```
 
 ## Compilación
 
 ```
-# Dependencias
-
-sudo apt-get install libxml2-dev libssl-dev libcurl4-openssl-dev libcurl4-gnutls-dev libjpeg-turbo8-dev libpng-dev libfreetype6-dev libmcrypt-dev libreadline-dev libxslt1-dev
-
-# Instalación
-
 tar xzvf php-xxx
 cd php-xxx
 ./configure \
