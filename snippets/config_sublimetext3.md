@@ -19,6 +19,7 @@ Configurar Sublime Text 3
 
 ## Configuración
 
+```
 {
     "bold_folder_labels": true,
     "color_scheme": "Packages/Theme - Afterglow/Afterglow-twilight.tmTheme",
