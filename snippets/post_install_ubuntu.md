@@ -1,6 +1,8 @@
 Post instalación Ubuntu
 =======================
 
+Actualizado a Ubuntu 17.10
+
 ## Upgrade
 
 ```
@@ -31,17 +33,12 @@ Configurar editor por defecto
 sudo update-alternatives --config editor
 ```
 
-## Gimp
-
-```
-sudo apt-get install gimp gimp-data gimp-plugin-registry gimp-data-extras
-```
-
 ## Gnome3
 
 ```
 sudo add-apt-repository -y ppa:gnome3-team/gnome3
-sudo apt-get install gnome-shell gnome-tweak-tool gnome-shell-extensions
+sudo apt-get install gnome-session gnome-shell gnome-tweak-tool
+sudo update-alternatives --config gdm3.css
 ```
 
 ## Google Chrome
@@ -78,6 +75,12 @@ git config --global credential.helper cache
 ssh -T git@github.com
 ```
 
+## Codecs
+
+```
+sudo apt-get install ubuntu-restricted-extras
+```
+
 ## Optimizations
 
 ```
@@ -87,6 +90,22 @@ sudo mv /usr/bin/bluetooth-applet /usr/bin/bluetooth-applet-old
 sudo apt-get remove deja-dup
 sudo apt-get autoremove gnome-online-accounts
 sudo apt-get install preload
+sudo apt install tlp tlp-rdw
+sudo tlp start
+```
+
+## Extras
+
+```
+sudo apt-get install shutter
+sudo apt-get install gimp
+sudo apt-get install gufw
+sudo ufw enable
+sudo apt-get install p7zip-full p7zip-rar rar unrar
+sudo apt-get install lm-sensors hddtemp
+sudo apt-get install libreoffice libreoffice-l10n-es libreoffice-templates
+sudo apt-get install inkscape
+sudo apt-get install gparted
 ```
 
 ## Clean up
